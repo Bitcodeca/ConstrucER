@@ -1,6 +1,7 @@
 .nivoSlider {
     position: relative;
     width: 100%;
+    min-height: 400px;
     height: auto;
     overflow: hidden;
 }
@@ -81,24 +82,27 @@
     position: absolute;
     top: 50%;
     width: 100%;
+    font-size: 20px;
 }
 .nivo-directionNav a {
     position: absolute;
     z-index: 9;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255,203,5, 0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 .nivo-directionNav a:hover {
     position: absolute;
     z-index: 9;
     cursor: pointer;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,203,5, 1);
+    background-color: rgba(0,0,0,1);
 }
 .nivo-prevNav {
-    left: 20%;
+    left: 10%;
 }
 .nivo-nextNav {
-    right: 20%;
+    right: 10%;
 }
 .nivo-controlNav {
     position: absolute;

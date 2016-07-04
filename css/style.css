@@ -12,13 +12,12 @@ nav ul a { font-family: 'Oswald', sans-serif; font-size: 1.5em; letter-spacing: 
 nav a.button-collapse, nav a.button-collapse i { height: 50px; line-height: 50px; }
 nav .hide-on-med-and-down a { text-align: center; }
 nav .hide-on-med-and-down .active a, nav .hide-on-med-and-down a:hover { color: #FFCB05; -webkit-transition: 0.4s; -moz-transition: 0.4s; -o-transition: 0.4s; -ms-transition: 0.4s; transition: 0.4s; }
-nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: translate(0%, -150px); transform: translate(0%, -150px); }
-h1 {font-size: 3.3em; font-family: 'Oswald', sans-serif; }
-h2 {font-size: 3em; font-family: 'Oswald', sans-serif; }
-h3 {font-size: 2.4em; font-family: 'Oswald', sans-serif; }
-h4 {font-size: 1.8em; font-family: 'Oswald', sans-serif; }
-h5 {font-size: 1.5em; font-family: 'Oswald', sans-serif; }
-p { font-size: 1.4em; }
+h1 {font-size: 4em; font-family: 'Oswald', sans-serif; }
+h2 {font-size: 3.5em; font-family: 'Oswald', sans-serif; }
+h3 {font-size: 2.9em; font-family: 'Oswald', sans-serif; }
+h4 {font-size: 2.4em; font-family: 'Oswald', sans-serif; }
+h5 {font-size: 1.8em; font-family: 'Oswald', sans-serif; }
+p { font-size: 1.4em; text-align: justify; }
 .row { margin-left: auto; margin-right: auto; }
 .displayinitial { display: initial !important; }
 .marginauto{ margin: auto; }
@@ -63,19 +62,105 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .fa-border { border: solid .08em #000; }
 
 /*///////////////////// GENERAL ////////////////////*/
+nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: translate(0%, -150px); transform: translate(0%, -150px); }
 .fondoamarillo {background-color: #FFCB05;}
+.letraamarilla { color: #FFCB05; }
 .header { overflow: hidden; max-height: 250px; }
-.header img { position: relative; width: 100%; height: auto;}
+.header img { position: relative; min-width: 100%; min-height: 250px; height: auto; }
+.gradienteamarillo{
+  background: rgb(255,203,5);
+  background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 );
+}
 
+/*///////////////////// INICIO ////////////////////*/
+.vermasfa{ background-color: #FFCB05; padding: 0px 5px 0px 5px;}
+.vermas{font-size: 2em; left: 160px; position: relative; top: 35px;}
+.ofrecemos{ position: absolute;top: -150px;padding: 5px 10px 5px 25px;letter-spacing: 5px;font-size: 3em; }
+.bienvenidos{ font-size: 4em; font-family: 'Oswald', sans-serif; }
+.fancy {
+  line-height: 0;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-bottom: 4px solid #FFCB05;
+  top: 0;
+  width: 100%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.iniciofondocasa {background: url(../img/iniciofondocasa.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.iniciotexto1{background-color: rgba(255,255,255,0.9);border:2px solid #FFCB05;}
+
+@media (max-width:1440px){
+  .ofrecemos{ position: absolute;top: -100px;}
+  .bienvenidos{ font-size: 3.5em; }
+}
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
+    .nivoSlider img { height: 400px !important; width: auto !important;}
+      .ofrecemos{ position: absolute;top: -75px;}
 }
 @media (max-width:768px){
-    h1 {font-size: 2.9em;}
-    h2 {font-size: 2.6em;}
-    h3 {font-size: 2.2em;}
-    h4 {font-size: 1.7em;}
-    h4 {font-size: 1.3em;}
+    nav .brand-logo { -ms-transform: translate(-50%, -150px); -webkit-transform: translate(-50%, -150px); transform: translate(-50%, -150px); }
+    .nivo-caption1 span {
+      font-size: 175px;
+    }
+    .nivo-caption1 h2 {
+      font-size: 65px;
+      top: 0px;
+    }
+    .caption1 h2 {
+      left: 125px;
+    }
+    .caption2 h2 {
+      left: 100px;
+    }
+    .nivo-caption1 {
+        left: 40%;
+        width: 300px;
+        height: auto;
+    }
+    .vermas {
+        left: 40px
+      }
+      .bienvenidos{ font-size: 3.2em; }
 }
 @media (max-width:520px){
+    .nivo-caption1 {
+        left: 50%;
+        width: 225px;
+        height: auto;
+    }
+    .nivo-caption1 h2 {
+      font-size: 45px;
+    }
+    .caption2 h2 {
+      font-size: 40px;
+      left: 20px;
+      text-align: center;
+    }
+    .nivo-caption1 span {
+      font-size: 125px;
+    }
 }
