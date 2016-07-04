@@ -1,35 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>ConstrucER</title>
 
-        <link rel="icon" type="image/png" href="img/favicon.ico">
-        <link href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ConstrucER</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <style>
-          body {font-family: 'Voltaire', sans-serif; color: white; font-size: 20px;width: 100vw; height: 100vh; overflow: hidden;}
-          .fondoamarillo {background-color:#ffc20f; position: absolute; width: 100%; height: 100%; overflow: hidden;}
-          .centro{ -ms-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); top: 50%; left: 50%; position: absolute; text-align: center;}
-          .letranegra {color: black;}
-        </style>
-    </head>
-    <body>
-        <div class="fondoamarillo">
-            <img src="img/PortadaFbContrucER.jpg" class="right img-responsive">
-            <h1 class="centro">CONSTRUC<span class="letranegra">ER</span> <br> ¡MUY PRONTO!</h1>
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Oswald" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/header.jpg" class="img-responsive">
+    </div>
+    <nav>
+        <div class="nav-wrapper grey darken-4 z-depth-1">
+            <div class="container">
+                <a href="index.html" class="brand-logo"><img src="img/ConstrucER.jpg" class="responsive-img"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse waves-effect waves-red"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <ul class="hide-on-med-and-down">
+                    <li class="active"><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="obras.html">OBRAS</a></li>
+                    <li><a href="venta.html">VENTA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li>
+                        <a href="#" class="center-align margintop10"><img src="img/construcER.jpg" class="responsive-img"></a>
+                    </li>
+                    <li class="active"><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="obras.html">OBRAS</a></li>
+                    <li><a href="venta.html">VENTA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    </body>
+    <div id="slider" class="nivoSlider">
+        <img src="img/slider1.jpg" alt="slider3" title="#caption1" />
+        <img src="img/slider2.jpg" alt="slider3" title="#caption2" />
+    </div>
+
+    <div id="caption1" style="display:none">
+        <div class="nivo-caption1 caption1">
+            <div class="contenidoslider">
+                <span>01</span>
+                <div class="tituloslider">
+                    <h2 class="black-text">OBRAS <br><small>Civiles</small></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="caption2" style="display:none">
+        <div class="nivo-caption1 caption2">
+            <div class="contenidoslider">
+                <span>02</span>
+                <div class="tituloslider">
+                    <h2 class="black-text">REMODELACIÓN <br><small>de interiores</small></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/////////////////////////////// FOOTER //////////////////////////////////////////-->
+    <footer class="fondoamarillo">
+        <div class="container white-text paddingtop10">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h3 class="black-text">SÍGUENOS</h3>
+                    <a href="https://www.instagram.com/blinlara/" target="_blank" class="black-text"><i class="fa fa-instagram fa-2x fa-border" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/blca26052016" target="_blank" class="black-text"><i class="fa fa-facebook-square fa-2x fa-border" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h3 class="black-text">UBICACIÓN</h3>
+                    <ul class="paddingleft15">
+                        <li><a href="#" class="black-text"><i class="fa fa-map-marker black-text fa-lg" aria-hidden="true"></i> CABUDARE ESTADO LARA VENEZUELA</a></li>
+                        <li class="margintop5"><a href="#" class="black-text"><i class="fa fa-phone black-text fa-lg" aria-hidden="true"></i> + 58 251 2682862</a></li>
+                        <li class="margintop5"><a href="#" class="black-text"><i class="fa fa-envelope-o black-text fa-lg" aria-hidden="true"></i> BLINLARA@HOTMAIL.COM</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <h3 class="black-text">CONTACTO</h3>
+                    <ul class="paddingleft15">
+                        <li><a href="#" class="black-text"><i class="fa fa-map-marker black-text fa-lg" aria-hidden="true"></i> CABUDARE ESTADO LARA VENEZUELA</a></li>
+                        <li class="margintop5"><a href="#" class="black-text"><i class="fa fa-phone black-text fa-lg" aria-hidden="true"></i> + 58 251 2682862</a></li>
+                        <li class="margintop5"><a href="#" class="black-text"><i class="fa fa-envelope-o black-text fa-lg" aria-hidden="true"></i> BLINLARA@HOTMAIL.COM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer grey darken-4 z-depth-1">
+            <div class="container">
+                <div class="row marginbot0">
+                    <div class="col-xs-12">
+                        <p class="copyright center-align small margin5">&copy; 2016 Construcer C.A. | RIF: J-40422522-6 | Todos los Derechos Reservados | Desarrollado por
+                            <a href="http://bitcodeweb.com/" target="_blank"><img src="img/logomini.png" class="responsive-img"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $('.parallax').parallax();
+        });
+        $('#slider').nivoSlider({
+            prevText: '',
+            nextText: '',
+            directionNav: true,
+            effect: 'sliceDownLeft',
+            controlNav: true,
+            pauseOnHover: false,
+            animSpeed: 500,
+            pauseTime: 4000,
+            controlNavThumbs: false,
+        });
+    </script>
+</body>
+
 </html>
