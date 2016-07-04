@@ -99,10 +99,10 @@
     background-color: rgba(0,0,0,1);
 }
 .nivo-prevNav {
-    left: 10%;
+    left: 5%;
 }
 .nivo-nextNav {
-    right: 10%;
+    right: 5%;
 }
 .nivo-controlNav {
     position: absolute;
@@ -151,6 +151,18 @@
 .nivo-caption1 .tituloslider {
   display: inline;
   margin-left: -50px;
+}
+.textoslider {
+    position: absolute;
+    width: 400px;
+    right: 10%;
+    top: 50%;
+    font-size: 1.2em;
+    background: rgba(0,0,0,0.6);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 5px;
 }
 .nivo-caption1 h2 {
   font-size: 65px;

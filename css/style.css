@@ -17,7 +17,7 @@ h2 {font-size: 3.5em; font-family: 'Oswald', sans-serif; }
 h3 {font-size: 2.9em; font-family: 'Oswald', sans-serif; }
 h4 {font-size: 2.4em; font-family: 'Oswald', sans-serif; }
 h5 {font-size: 1.8em; font-family: 'Oswald', sans-serif; }
-p { font-size: 1.4em; text-align: justify; }
+p { font-size: 1.5em; text-align: justify; }
 .row { margin-left: auto; margin-right: auto; }
 .displayinitial { display: initial !important; }
 .marginauto{ margin: auto; }
@@ -59,58 +59,44 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #4
 textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .input-field label {  font-size: 1.2rem; font-weight: bolder; }
 .showxs { display: none; }
+.hidexs { display: initial; }
 .fa-border { border: solid .08em #000; }
 
 /*///////////////////// GENERAL ////////////////////*/
 nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: translate(0%, -150px); transform: translate(0%, -150px); }
+.side-nav { background-color: #111; }
+.side-nav a { color: white; font-size: 1.4rem; }
 .fondoamarillo {background-color: #FFCB05;}
 .letraamarilla { color: #FFCB05; }
 .header { overflow: hidden; max-height: 250px; }
 .header img { position: relative; min-width: 100%; min-height: 250px; height: auto; }
-.gradienteamarillo{
-  background: rgb(255,203,5);
+.gradienteamarillo{ background: rgb(255,203,5);
   background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%);
   background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
   background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 );
-}
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 ); }
+.headerrrss{position: absolute; top: 200px; right: 5%;}
+.rrssfa{ background-color: #FFCB05; padding: 5px 7px 5px 7px; margin-right: 15px; width: 40px; text-align: center; opacity: 0.7; }
+.header .rrssfa:hover {opacity: 1;}
+.footertitle { border-bottom: 3px solid black; line-height: 60px;}
+footer .rrssfa { width: 45px; opacity: 1; }
+.footerdashedizq { position: absolute; height: 150px; width: 2px; border-left: 3px dashed black; left: 36%; margin-top: 30px; }
+.footerdashedder { position: absolute;  height: 150px; width: 2px; border-left: 3px dashed black; left: 59%; margin-top: 30px; }
 
 /*///////////////////// INICIO ////////////////////*/
 .vermasfa{ background-color: #FFCB05; padding: 0px 5px 0px 5px;}
 .vermas{font-size: 2em; left: 160px; position: relative; top: 35px;}
 .ofrecemos{ position: absolute;top: -150px;padding: 5px 10px 5px 25px;letter-spacing: 5px;font-size: 3em; }
 .bienvenidos{ font-size: 4em; font-family: 'Oswald', sans-serif; }
-.fancy {
-  line-height: 0;
-  text-align: center;
-}
-.fancy span {
-  display: inline-block;
-  position: relative;
-}
+.fancy { line-height: 0;  text-align: center;}
+.fancy span {  display: inline-block; position: relative;}
 .fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  border-bottom: 4px solid #FFCB05;
-  top: 0;
-  width: 100%;
-}
-.fancy span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.fancy span:after {
-  left: 100%;
-  margin-left: 15px;
-}
-.iniciofondocasa {background: url(../img/iniciofondocasa.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;}
-.iniciotexto1{background-color: rgba(255,255,255,0.9);border:2px solid #FFCB05;}
+.fancy span:after { content: ""; position: absolute; height: 1px; border-bottom: 4px solid #FFCB05; top: 0; width: 100%; }
+.fancy span:before { right: 100%; margin-right: 15px; }
+.fancy span:after { left: 100%; margin-left: 15px; }
+.iniciofondocasa {display: block; position: absolute; width: inherit; opacity: 0.2; filter: alpha(opacity=20); z-index: -1;}
+.iniciofondocasa img { position: relative; width: 100%; height: auto; }
+.iniciotexto1{background-color: rgba(255,255,255,0.5);border:2px solid #FFCB05;}
 
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
@@ -119,7 +105,10 @@ nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: trans
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
     .nivoSlider img { height: 400px !important; width: auto !important;}
-      .ofrecemos{ position: absolute;top: -75px;}
+    .ofrecemos{ position: absolute;top: -75px;}
+    .textoslider { width: 300px; right: -1%; }
+    .footerdashedizq { left: 30%; }
+    .footerdashedder { left: 64%; }
 }
 @media (max-width:768px){
     nav .brand-logo { -ms-transform: translate(-50%, -150px); -webkit-transform: translate(-50%, -150px); transform: translate(-50%, -150px); }
@@ -141,10 +130,14 @@ nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: trans
         width: 300px;
         height: auto;
     }
+    .textoslider {font-size: 1em;}
     .vermas {
         left: 40px
       }
-      .bienvenidos{ font-size: 3.2em; }
+    .bienvenidos{ font-size: 3.2em; }
+    .fancy span:before,
+    .fancy span:after { position: absolute; height: 1px; border-bottom: 4px solid #FFCB05; top: 0; width: 50%; }
+    .hidexs{display: none;}
 }
 @media (max-width:520px){
     .nivo-caption1 {
@@ -163,4 +156,8 @@ nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: trans
     .nivo-caption1 span {
       font-size: 125px;
     }
+    .fancy span:before,
+    .fancy span:after { position: absolute; height: 1px; border-bottom: 4px solid #FFCB05; top: 0; width: 0%; }
+    .fancy span:before { right: 100%; margin-right: 0px; }
+    .fancy span:after { left: 100%; margin-left: 0px; }
 }
