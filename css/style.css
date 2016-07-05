@@ -70,11 +70,7 @@ nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: trans
 .letraamarilla { color: #FFCB05; }
 .header { overflow: hidden; max-height: 250px; }
 .header img { position: relative; min-width: 100%; min-height: 250px; height: auto; }
-.gradienteamarillo{ background: rgb(255,203,5);
-  background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
-  background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 ); }
+.gradienteamarillo{ background: rgb(255,203,5); background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%); background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 ); }
 .headerrrss{position: absolute; top: 200px; right: 5%;}
 .rrssfa{ background-color: #FFCB05; padding: 5px 7px 5px 7px; margin-right: 15px; width: 40px; text-align: center; opacity: 0.7; }
 .header .rrssfa:hover {opacity: 1;}
@@ -112,13 +108,7 @@ footer .rrssfa { width: 45px; opacity: 1; }
 .height200 {height: 200px;}
 .minheight200 { min-height: 200px; }
 .paddingnosotros{ padding: 5px 30px 5px 30px; }
-.valores h2 {    font-size: 65px;
-    font-weight: bold;
-    text-align: left;
-    position: absolute;
-    top: 50px;
-    width: 250px;
-    margin-left: 182px;}
+.valores h2 { font-size: 65px; font-weight: bold; text-align: left; position: absolute; top: 50px; width: 250px; margin-left: 182px; }
 
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
