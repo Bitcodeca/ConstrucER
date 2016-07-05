@@ -46,7 +46,7 @@ p { font-size: 1.5em; text-align: justify; }
 .paddingbot0{	padding-bottom: 0px; }
 .paddingleft15 { padding-left: 15px; }
 .maxwidth100 { max-width: 100px !important; }
-footer{ font-size: 1.4em;}
+footer{ font-size: 1.4em; overflow: hidden; }
 .footer { position:relative; z-index:100; min-height:40px; width:100%;}
 .copyright {padding: 5px 0px 0px 0px;font-size:10px;color:white;letter-spacing:3px;font-weight:500;text-align: center; font-family: 'Raleway', sans-serif;}
 .zindexmenos1{z-index: -1;}
@@ -66,7 +66,7 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: translate(0%, -150px); transform: translate(0%, -150px); }
 .side-nav { background-color: #111; }
 .side-nav a { color: white; font-size: 1.4rem; }
-.fondoamarillo {background-color: #FFCB05;}
+.fondoamarillo { background-color: #ffc20f;}
 .letraamarilla { color: #FFCB05; }
 .header { overflow: hidden; max-height: 250px; }
 .header img { position: relative; min-width: 100%; min-height: 250px; height: auto; }
@@ -81,6 +81,7 @@ footer .rrssfa { width: 45px; opacity: 1; }
 .hramarillo { margin-top: 20px;  margin-bottom: 20px;  border: 0;  border-top: 2px solid #FFCB05; }
 .iniciofondocasa {display: block; position: absolute; width: inherit; opacity: 0.2; filter: alpha(opacity=20); z-index: -1; max-height: 100%; max-width: 100%;}
 .iniciofondocasa img { position: relative; width: 100%; height: auto; }
+footer {background-image: url(../img/fondoconstrucer.jpg);background-repeat: no-repeat;background-position: 100% 0%;background-size: auto 85%;}
 
 /*///////////////////// INICIO ////////////////////*/
 .vermasfa{ background-color: #FFCB05; padding: 0px 5px 0px 5px;}
@@ -124,9 +125,13 @@ footer .rrssfa { width: 45px; opacity: 1; }
 .twentytwenty-before-label:before { background: rgb(255,203,5); background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%); background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 ); font-family: 'Oswald', sans-serif; font-size: 2em; font-weight: normal; color: black; }
  .twentytwenty-after-label:before { background: rgb(255,255,255); background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,203,5,1) 70%, rgba(255,203,5,1) 100%); background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,203,5,1) 70%,rgba(255,203,5,1) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,203,5,1) 70%,rgba(255,203,5,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffcb05',GradientType=1 ); font-family: 'Oswald', sans-serif; font-size: 2em; font-weight: normal; color: black; }
 
+ /*///////////////////// VENTA ////////////////////*/
+
+
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
   .bienvenidos{ font-size: 3.5em; }
+  footer {background-size: auto 90%;}
 }
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
@@ -135,6 +140,7 @@ footer .rrssfa { width: 45px; opacity: 1; }
     .textoslider { width: 300px; right: -1%; }
     .footerdashedizq { left: 30%; }
     .footerdashedder { left: 64%; }
+    footer {background-size: auto 60%;}
 }
 @media (max-width:768px){
     nav .brand-logo { -ms-transform: translate(-50%, -150px); -webkit-transform: translate(-50%, -150px); transform: translate(-50%, -150px); }
@@ -154,6 +160,7 @@ footer .rrssfa { width: 45px; opacity: 1; }
     .cuadroamarillo h2 {font-size: 65px; top: 0px; }
     .cuadroamarillo { left: 40%; width: 300px; height: auto; }
     .vision .minheight200 { min-height: 307px;}
+    footer {background-image: initial;}
 }
 @media (max-width:520px){
     .nivo-caption1 { left: 50%; width: 225px; height: auto; }
@@ -175,4 +182,5 @@ footer .rrssfa { width: 45px; opacity: 1; }
     .servicios2 h2 { top: 25px; margin-left: 65px; font-size: 3em;}
     .servicios3 h2 { margin-left: 70px; }
     .servicios4 h2 { margin-left: 40px; width: 195px; }
+    footer {background-image: url(../img/fondoconstrucer.jpg);background-size: 100% auto;}
 }
