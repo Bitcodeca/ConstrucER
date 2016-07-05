@@ -110,6 +110,11 @@ footer .rrssfa { width: 45px; opacity: 1; }
 .paddingnosotros{ padding: 5px 30px 5px 30px; }
 .valores h2 { font-size: 65px; font-weight: bold; text-align: left; position: absolute; top: 50px; width: 250px; margin-left: 182px; }
 
+/*///////////////////// SERVICIOS ////////////////////*/
+.textoservicios{ position: absolute; width: 325px; left: 100%; top: 50%; font-size: 1.2em; -ms-transform: translate(-100%, -50%); -webkit-transform: translate(-100%, -50%); transform: translate(-100%, -50%); padding: 5px;}
+.servicios2 h2 { width: 300px }
+.servicios4 h2 { width: 290px }
+
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
   .bienvenidos{ font-size: 3.5em; }
@@ -155,4 +160,10 @@ footer .rrssfa { width: 45px; opacity: 1; }
     .fancy span:after { left: 100%; margin-left: 0px; }
     .nosotros2{ margin-left: -50px;}
     .valores h2 { margin-left: 110px;}
+    .minheight100 { min-height: 100px; }
+    .minheight100 .subtitulocongradiente { top: 0px; }
+    .servicios1 h2 { margin-left: 65px; }
+    .servicios2 h2 { top: 25px; margin-left: 65px; font-size: 3em;}
+    .servicios3 h2 { margin-left: 70px; }
+    .servicios4 h2 { margin-left: 40px; width: 195px; }
 }
