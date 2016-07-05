@@ -76,7 +76,7 @@ nav .brand-logo { -ms-transform: translate(0%, -150px); -webkit-transform: trans
 .header .rrssfa:hover {opacity: 1;}
 .footertitle { border-bottom: 3px solid black; line-height: 60px;}
 footer .rrssfa { width: 45px; opacity: 1; }
-.footerdashedizq { position: absolute; height: 150px; width: 2px; border-left: 3px dashed black; left: 36%; margin-top: 30px; }
+.footerdashedizq { position: absolute; height: 150px; width: 2px; border-left: 3px dashed black; left: 35%; margin-top: 30px; }
 .footerdashedder { position: absolute;  height: 150px; width: 2px; border-left: 3px dashed black; left: 59%; margin-top: 30px; }
 .hramarillo { margin-top: 20px;  margin-bottom: 20px;  border: 0;  border-top: 2px solid #FFCB05; }
 .iniciofondocasa {display: block; position: absolute; width: inherit; opacity: 0.2; filter: alpha(opacity=20); z-index: -1; max-height: 100%; max-width: 100%;}
@@ -114,6 +114,15 @@ footer .rrssfa { width: 45px; opacity: 1; }
 .textoservicios{ position: absolute; width: 325px; left: 100%; top: 50%; font-size: 1.2em; -ms-transform: translate(-100%, -50%); -webkit-transform: translate(-100%, -50%); transform: translate(-100%, -50%); padding: 5px;}
 .servicios2 h2 { width: 300px }
 .servicios4 h2 { width: 290px }
+
+/*///////////////////// OBRAS ////////////////////*/
+.obras1 h2{ width: 300px; }
+.textoobras{ position: absolute; width: 325px; left: 100%; top: 20%; font-size: 1.2em; -ms-transform: translate(-100%, -50%); -webkit-transform: translate(-100%, -50%); transform: translate(-100%, -50%); padding: 5px;}
+.sliderobras{ right: 0%;left: 50%;top: 70%;}
+.twentytwenty-handle {border: 3px solid #FFCB05;}
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after { background: #FFCB05; }
+.twentytwenty-before-label:before { background: rgb(255,203,5); background: -moz-linear-gradient(left, rgba(255,203,5,1) 0%, rgba(255,203,5,1) 30%, rgba(255,255,255,0) 100%); background: -webkit-linear-gradient(left, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); background: linear-gradient(to right, rgba(255,203,5,1) 0%,rgba(255,203,5,1) 30%,rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb05', endColorstr='#ffffff',GradientType=1 ); font-family: 'Oswald', sans-serif; font-size: 2em; font-weight: normal; color: black; }
+ .twentytwenty-after-label:before { background: rgb(255,255,255); background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,203,5,1) 70%, rgba(255,203,5,1) 100%); background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,203,5,1) 70%,rgba(255,203,5,1) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,203,5,1) 70%,rgba(255,203,5,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffcb05',GradientType=1 ); font-family: 'Oswald', sans-serif; font-size: 2em; font-weight: normal; color: black; }
 
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
