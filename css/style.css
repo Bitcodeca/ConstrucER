@@ -175,6 +175,7 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .cuadroamarillo h2 {font-size: 65px; top: 0px; }
     .cuadroamarillo { left: 40%; width: 300px; height: auto; }
     .vision .minheight200 { min-height: 307px;}
+    .obras1 h2 {font-size: 55px; width: 255px; margin-left: 80px;}
     footer {background-image: initial;}
     .ch-grid .adapt { width: 250px;	height: 250px; }
     .ch-info{	width: 210px;	height: 210px; }
@@ -200,5 +201,6 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .servicios2 h2 { top: 25px; margin-left: 65px; font-size: 3em;}
     .servicios3 h2 { margin-left: 70px; }
     .servicios4 h2 { margin-left: 40px; width: 195px; }
+    .obras1 h2 {font-size: 45px; width: 205px; margin-left: 40px;}
     footer {background-image: url(../img/fondoconstrucer.jpg);background-size: 100% auto;}
 }
