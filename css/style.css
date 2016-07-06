@@ -202,5 +202,7 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .servicios3 h2 { margin-left: 70px; }
     .servicios4 h2 { margin-left: 40px; width: 195px; }
     .obras1 h2 {font-size: 45px; width: 205px; margin-left: 40px;}
+    .ventas1 h2 { width: 200px; margin-left: 55px; }
+    .ventas1 img { -ms-transform: translate(-50%, 0px); -webkit-transform: translate(-50%, 0px); transform: translate(-50%, 0px);}
     footer {background-image: url(../img/fondoconstrucer.jpg);background-size: 100% auto;}
 }
