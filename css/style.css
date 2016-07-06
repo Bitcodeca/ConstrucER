@@ -129,34 +129,16 @@ footer {background-image: url(../img/fondoconstrucer.jpg);background-repeat: no-
 .ventas1 h2 { width: 290px }
 
 /*///////////////////// CONTACTO ////////////////////*/
-.mapa{overflow: hidden; position: relative; width: 100%; height: 380px;}
-.mapa iframe { width: 100%; height: 430px; margin-top: -50px;}
-.input-field label {
-     color: #000;
-   }
-/* label focus color */
-.input-field input[type=text]:focus + label {
- color: #ffc20f;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
- border-bottom: 1px solid #ffc20f;
- box-shadow: 0 1px 0 0 #ffc20f;
-}
-/* valid color */
-.input-field input[type=text].valid {
- border-bottom: 1px solid #ffc20f;
- box-shadow: 0 1px 0 0 #ffc20f;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
- border-bottom: 1px solid #000;
- box-shadow: 0 1px 0 0 #ffc20f;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
- color: #000;
-}
+.mapa{ overflow: hidden; position: relative; width: 100%; height: 380px; }
+.mapa iframe { width: 100%; height: 430px; margin-top: -50px; }
+.input-field label { color: #000; }
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label { color: #ffc20f; }
+.input-field input[type=text]:focus,.input-field input[type=email]:focus { border-bottom: 1px solid #ffc20f; box-shadow: 0 1px 0 0 #ffc20f; }
+.input-field input[type=text].valid,.input-field input[type=email].valid { border-bottom: 1px solid #ffc20f; box-shadow: 0 1px 0 0 #ffc20f; }
+.input-field input[type=text].invalid,.input-field input[type=email].invalid { border-bottom: 1px solid #000; box-shadow: 0 1px 0 0 #ffc20f; }
+.input-field .prefix.active { color: #000; }
+textarea.materialize-textarea:focus:not([readonly]) + label { color:  #ffc20f; }
+textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #ffc20f; box-shadow: 0 1px 0 0 #ffc20f; }
 
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;top: -100px;}
