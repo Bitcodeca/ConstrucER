@@ -168,6 +168,8 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .nivo-caption1 span { font-size: 150px; }
     .caption1 h2 {left: -60px;top: 0px;width: 200px;}
     .inicio2 h2 { margin-top: 0px; }
+    .caption2 h2 { left: -85px; }
+    .inicio3 h2 { width: 410px; }
     .bienvenidos{ font-size: 3.2em; }
     .fancy span:before,
     .fancy span:after { position: absolute; height: 1px; border-bottom: 4px solid #FFCB05; top: 0; width: 50%; }
@@ -188,6 +190,7 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .nivo-caption1 span { font-size: 125px; }
     .caption1 h2 { left: -57px; top: 20px; margin-top: -15px; }
     .inicio2 h2 { font-size: 40px; left: -110px; }
+    .inicio3 h2 {width: 250px; left: 0px; margin-left: -120px; }
     .cuadroamarillo { left: 50%; width: 225px; height: auto; }
     .cuadroamarillo h2 { font-size: 45px; width: 150px; }
     .cuadroamarillo span { font-size: 125px; }
