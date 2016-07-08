@@ -85,8 +85,8 @@ footer {background-image: url(../img/fondoconstrucer.jpg);background-repeat: no-
 
 /*///////////////////// INICIO ////////////////////*/
 .vermasfa{ background-color: #FFCB05; padding: 0px 5px 0px 5px;}
-.vermas{font-size: 2em; left: 160px; position: relative; top: 35px;}
-.ofrecemos{ position: absolute;top: -150px;padding: 5px 10px 5px 25px;letter-spacing: 5px;font-size: 3em; }
+.vermas{ position: absolute; font-size: 2em; top: 100%; width: 135px;}
+.ofrecemos{ position: relative;padding: 5px 10px 5px 25px;letter-spacing: 5px;font-size: 3em; width: 330px;}
 .bienvenidos{ font-size: 4em; font-family: 'Oswald', sans-serif; }
 .fancy { line-height: 0;  text-align: center;}
 .fancy span {  display: inline-block; position: relative;}
@@ -148,8 +148,13 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
     .nivoSlider img { height: 400px !important; width: auto !important;}
-    .ofrecemos{ position: absolute;top: -75px;}
-    .textoslider { width: 300px; right: -1%; }
+    .ofrecemos{ position: absolute; top: 0px; font-size: 2em;}
+    .textoslider {width: 70%; top: 80%; font-size: 1.1em; }
+    .nivo-caption1 span { font-size: 125px; }
+    .nivo-caption1 h2 { font-size: 50px;}
+    .caption1 h2 { left: -59px; top: 10px; }
+    .inicio2 h2 { font-size: 50px; margin-top: -12px; }
+    .vermas { left: 45%; }
     .footerdashedizq { left: 30%; }
     .footerdashedder { left: 64%; }
     footer {background-size: auto 60%;}
@@ -159,13 +164,10 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
 }
 @media (max-width:768px){
     nav .brand-logo { -ms-transform: translate(-50%, -150px); -webkit-transform: translate(-50%, -150px); transform: translate(-50%, -150px); }
-    .nivo-caption1 span { font-size: 175px; }
-    .nivo-caption1 h2 {font-size: 65px; top: 0px; }
-    .caption1 h2 { left: 125px; }
-    .caption2 h2 { left: 100px; }
-    .nivo-caption1 { left: 40%; width: 300px; height: auto; }
-    .textoslider {font-size: 1em;}
-    .vermas { left: 40px; }
+    .nivo-caption1 {top: 50%;left: 50%;}
+    .nivo-caption1 span { font-size: 150px; }
+    .caption1 h2 {left: -60px;top: 0px;width: 200px;}
+    .inicio2 h2 { margin-top: 0px; }
     .bienvenidos{ font-size: 3.2em; }
     .fancy span:before,
     .fancy span:after { position: absolute; height: 1px; border-bottom: 4px solid #FFCB05; top: 0; width: 50%; }
@@ -182,10 +184,10 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #f
     .ch-info-wrap{	width: 210px;	height: 210px; }
 }
 @media (max-width:520px){
-    .nivo-caption1 { left: 50%; width: 225px; height: auto; }
-    .nivo-caption1 h2 { font-size: 45px; }
-    .caption2 h2 { font-size: 40px; left: 20px; text-align: center; }
+    nav { box-shadow: none; }
     .nivo-caption1 span { font-size: 125px; }
+    .caption1 h2 { left: -57px; top: 20px; margin-top: -15px; }
+    .inicio2 h2 { font-size: 40px; left: -110px; }
     .cuadroamarillo { left: 50%; width: 225px; height: auto; }
     .cuadroamarillo h2 { font-size: 45px; width: 150px; }
     .cuadroamarillo span { font-size: 125px; }

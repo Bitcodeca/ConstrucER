@@ -1,8 +1,9 @@
 .nivoSlider {
     position: relative;
-    width: 100%;
+    width: 100%
     min-height: 400px;
     height: auto;
+    max-height: 550px;
     overflow: hidden;
 }
 .nivoSlider img {
@@ -66,7 +67,8 @@
     margin: 0;
 }
 .nivo-caption a {
-    display: inline !important;
+    /*display: inline !important;*/
+    display: block
 }
 .nivo-controlNav {
     text-align: center;
@@ -130,9 +132,9 @@
 .nivo-caption1 {
     position: absolute;
     display: -webkit-box;
-    top: 50%;
-    left: 30%;
-    width: 300px;
+    top: 35%;
+    left: 50%;
+    width: auto;
     height: auto;
     background: rgba(255,203,5,0.3);
     -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
@@ -140,23 +142,23 @@
 .nivo-caption1 .contenidoslider {
   margin-left: -25px;
   position: relative;
+  display: inline;
 }
 .nivo-caption1 span {
-  font-size: 225px;
+  font-size: 175px;
   color: #FFCB05;
   font-family: 'Oswald', sans-serif;
-  display: inline;
-  line-height: 110%;
+  line-height: 90%;
 }
 .nivo-caption1 .tituloslider {
   display: inline;
-  margin-left: -50px;
+  margin-left: 0px;
 }
 .textoslider {
     position: absolute;
-    width: 400px;
-    right: 10%;
-    top: 50%;
+    width: 50%;
+    left: 50%;
+    top: 70%;
     font-size: 1.2em;
     background: rgba(0,0,0,0.6);
     -ms-transform: translate(-50%, -50%);
@@ -168,15 +170,19 @@
   font-size: 65px;
   font-weight: bold;
   text-align: right;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  display: block;
 }
 .nivo-caption1 h2 small {
   font-weight: normal;
 }
 .caption1 h2 {
-  left: 150px;
+  left: -70px;
+  top: 25px;
 }
 .caption2 h2 {
-  left: 50px;
+  font-size: 60px;
+  left: -55px;
+  margin-top: 0px;
+  top: 15px;
 }
