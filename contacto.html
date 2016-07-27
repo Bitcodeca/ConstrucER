@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body  ng-app="contactApp">
     <div class="header">
         <img src="img/header.jpg" class="">
         <div class="headerrrss">
@@ -62,26 +62,36 @@
                 <img src="img/formulario.jpg" class="img-responsive">
             </div>
             <div class="col-sm-6">
-                <div class="input-field col-xs-12 margintop50">
-                    <i class="fa fa-user prefix" aria-hidden="true"></i>
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Nombre</label>
-                </div>
-                <div class="input-field col-xs-12">
-                    <i class="fa fa-phone prefix" aria-hidden="true"></i>
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Teléfono</label>
-                </div>
-                <div class="input-field col-xs-12">
-                    <i class="fa fa-envelope-o prefix" aria-hidden="true"></i>
-                  <input id="email" type="email" class="validate">
-                  <label for="email" data-error="Inválido" data-success="right">Email</label>
-                </div>
-                <div class="input-field col-xs-12">
-                    <i class="fa fa-pencil prefix" aria-hidden="true"></i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Mensaje</label>
-                </div>
+
+                    <div ng-controller="ContactController">
+                        <form ng-submit="submit(contactform)" name="contactform" method="post" role="form">
+                            <span class="input-field col-xs-12 margintop50" ng-class="{ 'has-error': contactform.nombre.$invalid && submitted }">
+                                <i class="fa fa-user prefix" aria-hidden="true"></i>
+                                <input id="nombre" type="text" class="validate" ng-model="formData.nombre" >
+                                <label for="nombre">Nombre</label>
+                            </span>
+                            <span class="input-field col-xs-12" ng-class="{ 'has-error': contactform.email.$invalid && submitted }">
+                                <i class="fa fa-phone prefix" aria-hidden="true"></i>
+                                <input id="email" type="text" class="validate" ng-model="formData.email">
+                                <label for="email">Email</label>
+                            </span>
+                            <span class="input-field col-xs-12" ng-class="{ 'has-error': contactform.telefono.$invalid && submitted }">
+                                <i class="fa fa-envelope-o prefix" aria-hidden="true"></i>
+                                <input id="telefono" type="text" class="validate" ng-model="formData.telefono">
+                                <label for="telefono">Teléfono</label>
+                            </span>
+                            <div class="input-field col-xs-12" ng-class="{ 'has-error': contactform.message.$invalid && submitted }">
+                                <i class="fa fa-pencil prefix" aria-hidden="true"></i>
+                                <textarea id="message" class="materialize-textarea" ng-model="formData.message"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                            <div class="center-align margintop25 marginbot10">
+                                <button class="waves-effect waves-light btn yellow black-text"  type="submit" ng-disabled="submitButtonDisabled">ENVIAR</button>
+                            </div>
+                        </form>
+                        <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+                    </div>
+
             </div>
         </div>
 
@@ -174,6 +184,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
     <script>
         $(document).ready(function() {
             $(".button-collapse").sideNav();

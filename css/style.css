@@ -139,6 +139,9 @@ footer {background-image: url(../img/fondoconstrucer.jpg);background-repeat: no-
 .input-field .prefix.active { color: #000; }
 textarea.materialize-textarea:focus:not([readonly]) + label { color:  #ffc20f; }
 textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #ffc20f; box-shadow: 0 1px 0 0 #ffc20f; }
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea { font-size: 1.5rem; }
+
+
 
 @media (max-width:1440px){
   .ofrecemos{ position: absolute;}
